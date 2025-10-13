@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Job Application Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <main class="form-container">
+    <h1>Student Job Application Form</h1>
+    
+    <form action="https://postman-echo.com/post" method="post">
+      
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@studentmail.com" required>
+      </div>
+
+      <!-- Job Position -->
+      <div class="form-group">
+        <label for="position">Preferred Job Position:</label>
+        <select id="position" name="position" required>
+          <option value="">-- Select Position --</option>
+          <option value="intern">Intern</option>
+          <option value="assistant">Research Assistant</option>
+          <option value="developer">Junior Developer</option>
+          <option value="designer">Graphic Designer</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="form-group full-width">
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" name="experience" rows="5" placeholder="Describe your previous experience (if any)..."></textarea>
+      </div>
+
+      <!-- Terms Agreement -->
+      <div class="form-group full-width checkbox-group">
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions.
+        </label>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-buttons full-width">
+        <button type="submit">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+      
+    </form>
+  </main>
+</body>
+</html>
