@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WanderCraft — Destinations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">WanderCraft</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Destinations</h1>
+    <p class="lead">Practical guides and seasonal tips for some of our favorite places.</p>
+
+    <section class="dest-list">
+      <article class="dest">
+        <img src="images/kyoto.svg" alt="Kyoto illustration">
+        <div>
+          <h2>Kyoto, Japan</h2>
+          <p>Best time to visit: Spring & Autumn. Wander through temples, tea houses and historic streets.</p>
+          <a class="btn-sm" href="#">View guide</a>
+        </div>
+      </article>
+
+      <article class="dest">
+        <img src="images/iceland.svg" alt="Iceland illustration">
+        <div>
+          <h2>Iceland</h2>
+          <p>Best time to visit: Summer for midnight sun, Winter for northern lights. Bring layers.</p>
+          <a class="btn-sm" href="#">View guide</a>
+        </div>
+      </article>
+
+      <article class="dest">
+        <img src="images/roadtrip.svg" alt="Road trip illustration">
+        <div>
+          <h2>Pacific Coast Road Trip</h2>
+          <p>Best time to visit: Late spring — plan stops for viewpoints, hikes & local diners.</p>
+          <a class="btn-sm" href="#">View guide</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year2"></span> Bishal Panthi</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

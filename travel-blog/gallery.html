@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WanderCraft — Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">WanderCraft</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Gallery</h1>
+    <p class="lead">A responsive photo grid using semantic markup. Replace the SVGs with real photos when ready.</p>
+
+    <section class="photo-grid" aria-label="Photo gallery">
+      <figure><img src="images/photo1.svg" alt="Sample travel photo 1"><figcaption>Coastal view</figcaption></figure>
+      <figure><img src="images/photo2.svg" alt="Sample travel photo 2"><figcaption>City rooftops</figcaption></figure>
+      <figure><img src="images/photo3.svg" alt="Sample travel photo 3"><figcaption>Mountain pass</figcaption></figure>
+      <figure><img src="images/photo4.svg" alt="Sample travel photo 4"><figcaption>Waterside</figcaption></figure>
+      <figure><img src="images/photo5.svg" alt="Sample travel photo 5"><figcaption>Forest trail</figcaption></figure>
+      <figure><img src="images/photo6.svg" alt="Sample travel photo 6"><figcaption>Sunset</figcaption></figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year3"></span> BishalPanthi</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

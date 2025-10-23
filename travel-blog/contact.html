@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WanderCraft — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">WanderCraft</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact</h1>
+    <p class="lead">Questions, collaborations or assignment feedback — drop a message below.</p>
+
+    <section class="contact-grid">
+      <form class="contact-form" action="mailto:example@example.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+
+      <aside class="contact-info" aria-labelledby="contact-info-heading">
+        <h2 id="contact-info-heading">Other ways to reach us</h2>
+        <p>Email: <a href="bsalpanthi111@gmail.com">bsalpanthi111@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/bishalpanthi111" target="_blank" rel="noopener">https://github.com/bishalpanthi111</a></p>
+        <p>Tip: Commit your project to a GitHub repo and paste the repo URL in your assignment submission.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year5"></span> Bishal Panthi</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>

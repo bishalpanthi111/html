@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WanderCraft — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">WanderCraft</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Travel smarter. Travel kinder.</h1>
+          <p class="lead">Inspiring stories, honest guides and a curated gallery for modern explorers.</p>
+          <p><a class="btn" href="destinations.html">Explore Destinations</a></p>
+        </div>
+        <div class="hero-art">
+          <img src="images/hero-landscape.svg" alt="Stylized mountains and sun illustration">
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h2>Curated Destinations</h2>
+        <p>Hand-picked spots with practical tips, best seasons to visit and recommended activities.</p>
+      </article>
+      <article>
+        <h2>Beautiful Gallery</h2>
+        <p>Responsive photo grid that adapts to any screen — ideal for showcasing travel photos.</p>
+      </article>
+      <article>
+        <h2>Personal Stories</h2>
+        <p>Readable, accessible blog posts using semantic article and header structure.</p>
+      </article>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Destination — Kyoto</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="images/kyoto.svg" alt="Illustration of Kyoto">
+          <div class="card-body">
+            <h3>Kyoto — Tradition & Tea</h3>
+            <p>Explore tranquil temples, seasonal blossoms and neighborhood cafés off the beaten path.</p>
+            <a class="link" href="destinations.html">Read more →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/iceland.svg" alt="Illustration of Iceland coast">
+          <div class="card-body">
+            <h3>Iceland — Dramatic Landscapes</h3>
+            <p>Rugged coastlines, geothermal pools and midnight sun photography tips.</p>
+            <a class="link" href="destinations.html">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Bishal panthi - Make Travel </p>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+<script>
+// small script: update year and mobile nav
+document.getElementById('year').textContent = new Date().getFullYear();
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
+navToggle.addEventListener('click', ()=>{
+  const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', String(!expanded));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>
